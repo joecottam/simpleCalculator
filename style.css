@@ -44,25 +44,12 @@ button {
 #button_0 {
     grid-column: span 2;
 }
- #button_0,
- #button_1,
- #button_2,
- #button_3,
- #button_4,
- #button_5,
- #button_6,
- #button_7,
- #button_8,
- #button_9,
- #button_decimal {
+.number_buttons {
      background-color: rgb(216, 225, 231);
      color: rgb(16, 52, 87);
  }
 
- #button_divide,
- #button_multiply,
- #button_substraction,
- #button_addition,
+.operator_buttons,
  #button_equals {
      background-color: rgb(88, 129, 168);
      color: rgb(216, 225, 231);
