@@ -12,7 +12,8 @@ p {
     font-size: 50px;
     border: 2px solid;
     margin: 20px;
-    background-color: rgb(65, 78, 56)
+    background-color: rgb(65, 78, 56);
+    height: 75px;
 }
 
 #container {
@@ -36,21 +37,58 @@ button {
    
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-#button_clear {
-    grid-column: span 3;
-    background-color: rgb(202, 170, 29);
-    color: rgb(16, 52, 87);
-}
+
+
 #button_0 {
     grid-column: span 2;
 }
 .number_buttons {
      background-color: rgb(216, 225, 231);
      color: rgb(16, 52, 87);
+     transition-duration: 0.2s;
+     border: none;
  }
+
+ .number_buttons:hover {
+    background-color: rgb(255, 255, 255);    
+}
+
+.number_buttons:active {
+    background-color: rgb(141, 141, 141);    
+}
+
+#button_clear {
+    grid-column: span 3;
+    background-color: rgb(202, 170, 29);
+    color: rgb(16, 52, 87);
+    border: none;
+    transition-duration: 0.2s;
+}
+
+#button_clear:hover {
+    background-color: rgb(255, 219, 58);
+}
+#button_clear:active {
+    background-color: rgb(138, 120, 41);
+}
+
 
 .operator_buttons,
  #button_equals {
      background-color: rgb(88, 129, 168);
      color: rgb(216, 225, 231);
+     transition-duration: 0.2s;
+     border: none;
+ }
+
+ 
+
+ .operator_buttons:hover,
+ #button_equals:hover {
+    background-color: rgb(123, 181, 235);
+ }
+
+ .operator_buttons:active,
+ #button_equals:active {
+    background-color: rgb(68, 101, 131);
  }
