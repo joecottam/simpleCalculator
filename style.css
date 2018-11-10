@@ -58,7 +58,7 @@ button {
 }
 
 #button_clear {
-    grid-column: span 3;
+    grid-column: span 2;
     background-color: rgb(202, 170, 29);
     color: rgb(16, 52, 87);
     border: none;
@@ -72,6 +72,20 @@ button {
     background-color: rgb(138, 120, 41);
 }
 
+#button_backspace {
+    background-color: rgb(202, 170, 29);
+    color: rgb(16, 52, 87);
+    border: none;
+    transition-duration: 0.2s;
+}
+
+#button_backspace:hover {
+    background-color: rgb(255, 219, 58);
+}
+#button_backspace:active {
+    background-color: rgb(138, 120, 41);
+}
+
 
 .operator_buttons,
  #button_equals {
@@ -79,6 +93,12 @@ button {
      color: rgb(216, 225, 231);
      transition-duration: 0.2s;
      border: none;
+ }
+
+ .operator_buttons_select {
+    text-shadow: 0 0 5px rgb(170, 162, 39);
+    font-weight: bold;
+    background-color: rgb(123, 181, 235);
  }
 
  
@@ -91,4 +111,10 @@ button {
  .operator_buttons:active,
  #button_equals:active {
     background-color: rgb(68, 101, 131);
+ }
+
+ 
+
+ #button_decimal:disabled {
+    background-color: rgb(65, 65, 65);  
  }
